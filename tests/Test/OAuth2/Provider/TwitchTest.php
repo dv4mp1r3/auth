@@ -25,7 +25,11 @@ class TwitchTest extends AbstractProviderTestCase
     {
         return $this->createResponse(
             json_encode([
-                'id' => 12345,
+                'data' => [
+                    [
+                        'id' => 12345,
+                    ]
+                ],
             ])
         );
     }
